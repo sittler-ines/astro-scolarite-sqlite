@@ -16,6 +16,10 @@ export default defineConfig({
     }),
   ],
 
+  pages: {
+    signIn: '/login',
+  },
+
   callbacks: {
     async redirect({ url, baseUrl }) {
       return `${baseUrl}/`;
